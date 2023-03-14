@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_infos",
+  "info": {
+    "singularName": "news-info",
+    "pluralName": "news-infos",
+    "displayName": "news-info"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "author": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

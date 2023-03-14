@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_impressions",
+  "info": {
+    "singularName": "user-impression",
+    "pluralName": "user-impressions",
+    "displayName": "user-impression"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "news": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::storemeta.storemeta",
+      "mappedBy": "user_impression"
+    }
+  }
+}
