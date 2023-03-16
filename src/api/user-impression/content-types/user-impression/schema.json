@@ -7,20 +7,26 @@
     "displayName": "user-impression"
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "user": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "news"
+      ],
+      "default": "news"
+    },
+    "user_id": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     },
-    "news": {
+    "news_infos": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::storemeta.storemeta",
-      "mappedBy": "user_impression"
+      "target": "api::news-info.news-info"
     }
   }
 }
